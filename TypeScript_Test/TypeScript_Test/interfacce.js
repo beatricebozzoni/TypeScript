@@ -26,4 +26,4 @@ window.onload = function () {
     _this.fullname = createStudent(new Student("Mario", "Rossi", el));
     showAlert(_this.message, _this.description = "Pippo!");
 };
-//# sourceMappingURL=prova.js.map
+//# sourceMappingURL=interfacce.js.map
