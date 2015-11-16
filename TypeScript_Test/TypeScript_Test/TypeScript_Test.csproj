@@ -27,8 +27,8 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="prova.ts">
+    <TypeScriptCompile Include="area.ts" />
+    <TypeScriptCompile Include="classe.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="interfacce.ts" />

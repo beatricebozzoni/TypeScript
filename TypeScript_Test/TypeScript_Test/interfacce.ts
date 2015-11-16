@@ -46,4 +46,6 @@ function stampa() {
 window.onload = () => {
     addressBookPopulate();
     stampa();
+    calcoloArea();
+    startProva();
 }

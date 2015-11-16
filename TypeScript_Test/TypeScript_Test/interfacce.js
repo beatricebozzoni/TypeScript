@@ -1,29 +1,37 @@
-var _this = this;
-var Student = (function () {
-    function Student(nome, cognome, element) {
-        this.nome = nome;
-        this.cognome = cognome;
-        this.fullname = nome + " " + cognome;
-        this.element = element;
-        this.element.innerHTML = this.fullname;
-    }
-    return Student;
-})();
-function createStudent(person) {
-    return person.nome + " " + person.cognome;
+var addressBook = [];
+function addressBookPopulate() {
+    var person = {
+        name: "gigi",
+        surname: "la cremeria",
+        contact: {
+            phone: 12345,
+            email: "gigi@lacremeria.it"
+        }
+    };
+    var person2 = {
+        name: "gigi",
+        surname: "la funivia",
+        contact: {
+            phone: 67891,
+            email: "gigi@lafunivia.it"
+        }
+    };
+    addressBook.push(person);
+    addressBook.push(person2);
 }
-function showAlert(message, description) {
-    if (message === void 0) { message = "Hello"; }
-    if (description != null) {
-        alert(message + ": " + description);
-    }
-    else {
-        alert(message);
+function stampa() {
+    var contact = "";
+    var length = addressBook.length;
+    for (var i = 0; i < length; i++) {
+        var personArray = addressBook.pop();
+        contact = contact.concat(personArray.name, " ", personArray.surname, ", ", personArray.contact.phone.toString(), ", ", personArray.contact.email, "<br>");
+        document.getElementById("interfacce").innerHTML += contact;
     }
 }
 window.onload = function () {
-    var el = document.getElementById('prova');
-    _this.fullname = createStudent(new Student("Mario", "Rossi", el));
-    showAlert(_this.message, _this.description = "Pippo!");
+    addressBookPopulate();
+    stampa();
+    calcoloArea();
+    startProva();
 };
 //# sourceMappingURL=interfacce.js.map
