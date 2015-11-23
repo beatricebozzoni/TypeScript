@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "tsc index.ts --module commonjs ",
+    "pretest": ["tsc test/*Test.ts --module commonjs"],
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^1.6.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}

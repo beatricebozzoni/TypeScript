@@ -1,0 +1,19 @@
+{
+  "name": "interfacce",
+  "version": "0.0.0",
+  "description": "",
+  "main": "interfacce.js",
+  "scripts": {
+    "prepublish": "tsc interfacce.ts --module commonjs ",
+    "pretest": "tsc test/InterfacceTest.ts --module commonjs",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^1.6.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}

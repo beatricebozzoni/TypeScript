@@ -39,4 +39,4 @@ function calcoloArea() {
     var stringa = "Area rettangolo larghezza (" + rectangle.heigth + "," + rectangle.width + ") = " + rectangle.getArea().toString();
     document.getElementById("classe").innerHTML = stringa;
 }
-//# sourceMappingURL=area.js.map
+//# sourceMappingURL=Area.js.map
