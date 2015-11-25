@@ -27,4 +27,3 @@ function startClasse() {
     this.fullname = createStudent(new Student("Mario", "Rossi", el));
     showAlert(this.message, this.description = "Pippo!");
 }
-//# sourceMappingURL=classe.js.map

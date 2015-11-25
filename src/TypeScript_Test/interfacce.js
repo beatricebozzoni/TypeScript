@@ -34,7 +34,6 @@ var Rubrica = (function () {
     };
     Rubrica.prototype.stampaLength = function (addressBook) {
         return addressBook.length;
-        //return 0;
     };
     return Rubrica;
 })();

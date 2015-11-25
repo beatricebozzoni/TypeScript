@@ -2,16 +2,17 @@
   "name": "interfacce",
   "version": "0.0.0",
   "description": "",
-  "main": "classe_copia.js",
+  "main": "interfacce.js",
   "scripts": {
-    "prepublish": "tsc classe_copia.ts --module commonjs ",
-    "pretest": ["tsc test/*Test.ts --module commonjs"],
+    "prepublish": "tsc interfacce.ts --module commonjs ",
+    "pretest": "tsc test/InterfacceTest.ts --module commonjs",
     "test": "mocha"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typescript": "^1.6.2"
+    "typescript": "^1.6.2",
+    "private": true
   },
   "devDependencies": {
     "mocha": "^2.3.4"
